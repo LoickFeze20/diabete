@@ -31,7 +31,7 @@ def main():
     menu = ["Home","Analysis","Data Visualization","Machine Learning"]
     choise = st.sidebar.selectbox("Menu",menu)
     
-    data = load_data("csv/diabetes.csv")
+    data = load_data("diabetes.csv")
     if choise =='Home':
         left,middle,right = st.columns((2,3,2))
         with middle:
